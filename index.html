@@ -2,38 +2,42 @@
 <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All India Sai Samaj | Shri Sai Baba Temple Mylapore, Chennai</title>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L3BEDPJE02"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-L3BEDPJE02');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-L3BEDPJE02');
     </script>
-    <!-- Google Ads emp-->
-    <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
-        <!-- Google Ads -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9351361840615541" crossorigin="anonymous"></script>
-    <meta name="google-adsense-account" content="ca-pub-9351361840615541">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shri Sai Baba Mandir | Lodhi Road</title>
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
+                        serif: ['Cinzel', 'serif'],
                     },
                     colors: {
                         brand: {
-                            50: '#fff7ed',
+                            50: '#fffaf3',
                             100: '#ffedd5',
-                            500: '#f97316', // Saffron/Orange theme
-                            600: '#ea580c',
-                            900: '#7c2d12',
+                            200: '#fed7aa',
+                            500: '#ea580c', // Sacred deep saffron
+                            600: '#c2410c',
+                            700: '#9a3412',
+                            800: '#7c2d12',
+                            900: '#431407',
+                        },
+                        gold: {
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
                         }
                     }
                 }
@@ -41,40 +45,58 @@
         }
     </script>
     <style>
-        /* Custom scrollbar for a polished look */
+        /* Custom scrollbar */
         ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #f1f1f1; }
-        ::-webkit-scrollbar-thumb { background: #f97316; border-radius: 4px; }
-        ::-webkit-scrollbar-thumb:hover { background: #ea580c; }
+        ::-webkit-scrollbar-track { background: #fffaf3; }
+        ::-webkit-scrollbar-thumb { background: #ea580c; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #c2410c; }
+        .hero-pattern {
+            background-color: #431407;
+            background-image: radial-gradient(#9a3412 0.75px, transparent 0.75px), radial-gradient(#9a3412 0.75px, #431407 0.75px);
+            background-size: 30px 30px;
+            background-position: 0 0, 15px 15px;
+        }
     </style>
 </head>
 <body class="font-sans text-gray-800 bg-brand-50 selection:bg-brand-500 selection:text-white">
 
+    <!-- Top Announcement Bar -->
+    <div class="bg-brand-900 text-gold-400 text-xs sm:text-sm py-2 px-4 text-center font-medium border-b border-brand-800 flex justify-center items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-gold-400 animate-pulse"></span>
+        <span>Headquarters of All India Sai Samaj • Consecrated by Pujyasri Narasimha Swamiji in 1952</span>
+    </div>
+
     <!-- Header / Navigation -->
-    <header class="fixed w-full top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm transition-all duration-300">
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
+            <div class="flex justify-between items-center h-20">
                 <!-- Logo area -->
-                <div class="flex-shrink-0 flex items-center gap-3 cursor-pointer" onclick="window.scrollTo(0,0)">
-                    <div class="w-10 h-10 bg-brand-500 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-md">
+                <div class="flex-shrink-0 flex items-center gap-3 cursor-pointer" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                    <div class="w-12 h-12 bg-gradient-to-tr from-brand-600 to-gold-500 rounded-full flex items-center justify-center text-white font-serif font-bold text-2xl shadow-md border-2 border-white">
                         ॐ
                     </div>
-                    <span class="font-bold text-xl md:text-2xl text-brand-900 tracking-tight">Shri Sai Baba Mandir</span>
+                    <div>
+                        <span class="font-serif font-bold text-lg md:text-xl text-brand-900 tracking-tight block leading-tight">Shri Sai Baba Temple</span>
+                        <span class="text-xs uppercase font-semibold text-brand-600 tracking-wider">All India Sai Samaj • Mylapore</span>
+                    </div>
                 </div>
 
                 <!-- Desktop Menu -->
-                <nav class="hidden md:flex space-x-8">
-                    <a href="#about" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">About</a>
-                    <a href="#timings" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">Aarti Timings</a>
-                    <a href="#seva" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">Seva</a>
-                    <a href="#gallery" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">Gallery</a>
-                    <a href="#visit" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">Visit</a>
-                    <a href="#contact" class="text-brand-600 border border-brand-500 hover:bg-brand-500 hover:text-white px-4 py-2 rounded-full font-medium transition-all">Contact</a>
+                <nav class="hidden lg:flex items-center space-x-7">
+                    <a href="#about" class="text-gray-700 hover:text-brand-600 font-medium transition-colors text-sm">About & Samaj</a>
+                    <a href="#dhuni" class="text-gray-700 hover:text-brand-600 font-medium transition-colors text-sm">Akhanda Dhuni</a>
+                    <a href="#timings" class="text-gray-700 hover:text-brand-600 font-medium transition-colors text-sm">Aarti Schedule</a>
+                    <a href="#seva" class="text-gray-700 hover:text-brand-600 font-medium transition-colors text-sm">Annadhanam & Seva</a>
+                    <a href="#gallery" class="text-gray-700 hover:text-brand-600 font-medium transition-colors text-sm">Glimpses</a>
+                    <a href="#visit" class="text-gray-700 hover:text-brand-600 font-medium transition-colors text-sm">Visitor Guide</a>
+                    <a href="#contact" class="bg-brand-600 hover:bg-brand-700 text-white text-sm px-5 py-2.5 rounded-full font-semibold shadow hover:shadow-md transition-all">
+                        Darshan & Route
+                    </a>
                 </nav>
 
                 <!-- Mobile menu button -->
-                <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-brand-600 focus:outline-none p-2">
+                <div class="lg:hidden flex items-center">
+                    <button id="mobile-menu-btn" aria-label="Toggle navigation" class="text-gray-700 hover:text-brand-600 focus:outline-none p-2 rounded-lg hover:bg-brand-100">
                         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
                         </svg>
@@ -84,47 +106,73 @@
         </div>
 
         <!-- Mobile Menu Panel -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-lg">
-            <div class="px-4 pt-2 pb-6 space-y-2 flex flex-col">
-                <a href="#about" class="mobile-link block px-3 py-3 text-base font-medium text-gray-700 hover:bg-brand-50 hover:text-brand-600 rounded-lg">About</a>
-                <a href="#timings" class="mobile-link block px-3 py-3 text-base font-medium text-gray-700 hover:bg-brand-50 hover:text-brand-600 rounded-lg">Aarti Timings</a>
-                <a href="#seva" class="mobile-link block px-3 py-3 text-base font-medium text-gray-700 hover:bg-brand-50 hover:text-brand-600 rounded-lg">Community Seva</a>
-                <a href="#gallery" class="mobile-link block px-3 py-3 text-base font-medium text-gray-700 hover:bg-brand-50 hover:text-brand-600 rounded-lg">Gallery</a>
-                <a href="#visit" class="mobile-link block px-3 py-3 text-base font-medium text-gray-700 hover:bg-brand-50 hover:text-brand-600 rounded-lg">Visitor Info</a>
-                <a href="#contact" class="mobile-link block px-3 py-3 text-base font-medium text-brand-600 bg-brand-50 rounded-lg mt-4">Contact & Location</a>
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-brand-100 absolute w-full shadow-xl">
+            <div class="px-5 pt-3 pb-6 space-y-2 flex flex-col">
+                <a href="#about" class="mobile-link block px-3 py-2.5 text-base font-medium text-gray-700 hover:bg-brand-50 hover:text-brand-600 rounded-lg">About & Heritage</a>
+                <a href="#dhuni" class="mobile-link block px-3 py-2.5 text-base font-medium text-gray-700 hover:bg-brand-50 hover:text-brand-600 rounded-lg">Akhanda Dhuni</a>
+                <a href="#timings" class="mobile-link block px-3 py-2.5 text-base font-medium text-gray-700 hover:bg-brand-50 hover:text-brand-600 rounded-lg">Aarti & Thursday Timings</a>
+                <a href="#seva" class="mobile-link block px-3 py-2.5 text-base font-medium text-gray-700 hover:bg-brand-50 hover:text-brand-600 rounded-lg">Annadhanam & Social Welfare</a>
+                <a href="#gallery" class="mobile-link block px-3 py-2.5 text-base font-medium text-gray-700 hover:bg-brand-50 hover:text-brand-600 rounded-lg">Temple Gallery</a>
+                <a href="#visit" class="mobile-link block px-3 py-2.5 text-base font-medium text-gray-700 hover:bg-brand-50 hover:text-brand-600 rounded-lg">Pilgrim Facilities</a>
+                <a href="#contact" class="mobile-link block px-4 py-3 text-center text-base font-semibold text-white bg-brand-600 rounded-xl shadow mt-2">Find Directions</a>
             </div>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="relative min-h-screen flex items-center justify-center overflow-hidden bg-[url('./assets/image.jpg')] bg-cover bg-center bg-no-repeat bg-fixed">
-        <!-- Subtle background overlay for text readability -->
-        <div class="absolute inset-0 bg-black/20"></div>
+    <section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-brand-900 text-white">
+        <!-- Background Gradient and Overlay -->
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=1920&q=80'); opacity: 0.22;"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-brand-950/80 via-brand-900/85 to-brand-950"></div>
         
-        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center mt-16">
+        <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 flex flex-col items-center text-center">
             <!-- Tagline -->
-            <span class="px-6 py-2 rounded-full border border-white/50 text-white text-xs sm:text-sm font-semibold tracking-widest uppercase mb-6 inline-block">
-                सबका मालिक एक (One God Governs All)
-            </span>
+            <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-gold-400/40 bg-black/30 backdrop-blur-sm text-gold-400 text-xs sm:text-sm font-semibold tracking-widest uppercase mb-6 shadow-sm">
+                <span>ॐ साईं राम</span> • <span>श्रद्धा और सबुरी (Faith & Patience)</span>
+            </div>
             
             <!-- Main Heading -->
-            <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold text-white tracking-tight mb-6 drop-shadow-sm">
-                Shri Sai Baba Mandir
+            <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl font-bold text-white tracking-tight mb-6 leading-tight">
+                Shri Sai Baba Temple <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold-400 via-yellow-200 to-gold-500">Mylapore, Chennai</span>
             </h1>
             
             <!-- Sub-heading -->
-            <p class="text-lg md:text-xl lg:text-2xl text-white max-w-3xl font-medium mb-10 px-4 drop-shadow-md">
-                A sacred sanctuary of faith, peace, and selfless service in the heart of New Delhi since 1968.
+            <p class="text-base sm:text-lg md:text-xl text-gray-200 max-w-3xl font-normal mb-10 leading-relaxed drop-shadow">
+                The pioneer shrine of Shirdi Sai Baba in South India and the international headquarters of the <strong>All India Sai Samaj</strong>, nurtured by the devotion of Sri Narasimha Swamiji.
             </p>
             
-            <!-- Buttons -->
-            <div class="flex flex-col sm:flex-row gap-4 sm:gap-5 w-full sm:w-auto px-4">
-                <a href="#timings" class="inline-flex justify-center items-center px-8 py-3.5 rounded-full shadow-lg text-brand-900 bg-white font-semibold hover:bg-gray-100 transition-all hover:scale-105">
-                    View Aarti Timings
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto px-4">
+                <a href="#timings" class="inline-flex justify-center items-center px-8 py-4 rounded-full shadow-lg text-brand-900 bg-gradient-to-r from-gold-400 to-yellow-300 font-bold hover:from-gold-500 hover:to-yellow-400 transition-all transform hover:-translate-y-0.5">
+                    View Aarti & Darshan Timings
                 </a>
-                <a href="#contact" class="inline-flex justify-center items-center px-8 py-3.5 border border-white/60 text-white rounded-full font-semibold hover:bg-white/10 backdrop-blur-sm transition-all hover:scale-105">
-                    Get Directions
+                <a href="#dhuni" class="inline-flex justify-center items-center px-8 py-4 border border-white/40 text-white rounded-full font-semibold hover:bg-white/10 backdrop-blur-sm transition-all transform hover:-translate-y-0.5">
+                    Sacred Akhanda Dhuni
                 </a>
+                <a href="#contact" class="inline-flex justify-center items-center px-8 py-4 bg-brand-700/60 hover:bg-brand-700 border border-brand-500 text-white rounded-full font-semibold backdrop-blur-sm transition-all transform hover:-translate-y-0.5">
+                    Get Location Map
+                </a>
+            </div>
+
+            <!-- Quick Highlight Pills -->
+            <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6 text-center text-xs sm:text-sm font-medium text-brand-100">
+                <div class="bg-black/30 border border-brand-800 rounded-xl p-3 backdrop-blur-sm">
+                    <span class="text-gold-400 block font-bold text-base sm:text-lg">1940</span>
+                    Founded by Sri Narasimha Swamiji
+                </div>
+                <div class="bg-black/30 border border-brand-800 rounded-xl p-3 backdrop-blur-sm">
+                    <span class="text-gold-400 block font-bold text-base sm:text-lg">Akhanda Dhuni</span>
+                    Perpetual Sacred Fire
+                </div>
+                <div class="bg-black/30 border border-brand-800 rounded-xl p-3 backdrop-blur-sm">
+                    <span class="text-gold-400 block font-bold text-base sm:text-lg">Annadhanam</span>
+                    Daily Free Holy Meals
+                </div>
+                <div class="bg-black/30 border border-brand-800 rounded-xl p-3 backdrop-blur-sm">
+                    <span class="text-gold-400 block font-bold text-base sm:text-lg">Thursdays</span>
+                    Full Day Special Darshan
+                </div>
             </div>
         </div>
     </section>
@@ -132,384 +180,776 @@
     <!-- About Section -->
     <section id="about" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
-                <div class="mb-10 lg:mb-0 relative">
-                    <!-- Image Placeholder -->
-                    <div class="relative rounded-3xl overflow-hidden shadow-2xl aspect-w-4 aspect-h-3">
-                        <img src="./assets/temple-interior.jpg" alt="Temple Sanctum and Diyas" class="w-full h-full object-cover rounded-3xl hover:scale-105 transition-transform duration-700">
+            <div class="lg:grid lg:grid-cols-12 lg:gap-16 items-center">
+                <!-- Image & Founder Memorial Card -->
+                <div class="lg:col-span-5 mb-12 lg:mb-0 relative">
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-brand-100">
+                        <img src="https://images.unsplash.com/photo-1609342122563-a43ac8917a3a?auto=format&fit=crop&w=900&q=80" 
+                             alt="Temple Sanctum and Spiritual Lamps" 
+                             onerror="this.src='https://placehold.co/800x600/f97316/ffffff?text=Mylapore+Sai+Baba+Temple'"
+                             class="w-full h-[440px] object-cover hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-950/80 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 text-white">
+                            <span class="text-xs uppercase tracking-widest text-gold-400 font-bold block mb-1">Mylapore, Chennai</span>
+                            <h4 class="text-xl font-serif font-bold">All India Sai Samaj Mandir</h4>
+                            <p class="text-sm text-gray-200 mt-1">Home to Baba's divine marble moorthi & Sri Narasimha Swamiji’s holy samadhi.</p>
+                        </div>
                     </div>
-                    <!-- Decorative badge -->
-                    <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl border border-brand-50 hidden md:block">
-                        <div class="text-4xl font-bold text-brand-500 mb-1">50+</div>
-                        <div class="text-sm font-semibold text-gray-500 uppercase tracking-wider">Years of Faith</div>
+                    
+                    <!-- Decorative Experience Badge -->
+                    <div class="absolute -bottom-6 -right-4 bg-brand-50 p-5 rounded-2xl shadow-xl border border-brand-200 hidden sm:flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-brand-500 text-white flex items-center justify-center font-bold text-xl">
+                            80+
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-gray-900">Years of Eternal Grace</div>
+                            <div class="text-xs text-gray-600">Established circa 1940–1952</div>
+                        </div>
                     </div>
                 </div>
                 
-                <div>
-                    <h2 class="text-sm font-bold text-brand-500 tracking-wide uppercase mb-2">About The Temple</h2>
-                    <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">A Legacy of Faith & Devotion</h3>
-                    <div class="prose prose-lg text-gray-600">
-                        <p class="mb-4">
-                            Established in 1968 and gracefully managed by the <strong>Shri Sai Bhakt Samaj (Regd.)</strong>, Shri Sai Baba Mandir on Lodhi Road stands as one of the oldest and most revered temples dedicated to Shirdi Sai Baba in the National Capital Region.
-                        </p>
-                        <p class="mb-4">
-                            Located near the Jawaharlal Nehru Stadium in Lodi Colony, the temple was built to serve as a peaceful spiritual haven for all devotees, regardless of religion, caste, or background. The central sanctum features a beautiful white marble idol of Sai Baba, elevated so devotees can seek blessings even while passing by.
+                <!-- History and Description Content -->
+                <div class="lg:col-span-7">
+                    <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-brand-600 bg-brand-100/70 px-3.5 py-1.5 rounded-full mb-3">
+                        Hallowed Heritage
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-serif font-bold text-gray-900 mb-6 leading-snug">
+                        The Spiritual Cradle of Sai Devotion in South India
+                    </h2>
+                    
+                    <div class="space-y-4 text-gray-600 leading-relaxed text-base sm:text-lg">
+                        <p>
+                            Nestled in the historic and cultural heart of <strong>Mylapore, Chennai</strong>, the Sai Baba Temple at Alamelumangapuram is one of the most prominent, respected, and oldest Sai Baba temples across India. It serves as the world headquarters of the <strong>All India Sai Samaj (Regd.)</strong>.
                         </p>
                         <p>
-                            Over the decades, it has evolved into both a central place of worship and a bustling center for social welfare, staying true to Baba's teachings of love and service.
+                            The temple owes its sacred inception to <strong>Pujyasri B. V. Narasimha Swamiji (1874–1956)</strong>, an ardent apostle of Sai Baba. After experiencing divine transformation through Baba's grace, Swamiji traveled extensively throughout the subcontinent, recording first-hand experiences of Shirdi devotees and pioneering books like <em>"Life of Sai Baba"</em> and <em>"Sai Satcharitra"</em> interpretations.
                         </p>
+                        <p>
+                            In 1940, Swamiji established the All India Sai Samaj. Devotees subsequently purchased land in Mylapore, laying the foundation stone in 1949 and consecrating this sacred mandir in 1952. The temple welcomes millions each year without distinction of religion, caste, or creed, embodying Baba’s universal motto: <em>"Sabka Malik Ek"</em>.
+                        </p>
+                    </div>
+
+                    <!-- Highlight Features -->
+                    <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="flex items-start gap-3 p-4 rounded-xl bg-brand-50/80 border border-brand-100">
+                            <span class="text-brand-600 mt-0.5 text-xl">🪔</span>
+                            <div>
+                                <h4 class="font-bold text-gray-900 text-sm">Akhanda Dhuni & Holy Udi</h4>
+                                <p class="text-xs text-gray-600 mt-0.5">Consecrated holy flame nurtured continuously in Shirdi tradition.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3 p-4 rounded-xl bg-brand-50/80 border border-brand-100">
+                            <span class="text-brand-600 mt-0.5 text-xl">🕊️</span>
+                            <div>
+                                <h4 class="font-bold text-gray-900 text-sm">Narasimha Swamiji Samadhi</h4>
+                                <p class="text-xs text-gray-600 mt-0.5">Sanctified memorial shrine of the revered apostle of Sai Baba.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9351361840615541"
-        crossorigin="anonymous"></script>
-    <!-- Horizontal Full Size -->
-    <ins class="adsbygoogle"
-        style="display:block"
-        data-ad-client="ca-pub-9351361840615541"
-        data-ad-slot="5893405602"
-        data-ad-format="auto"
-        data-full-width-responsive="true"></ins>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
 
-    <!-- Aarti Timings Section -->
+    <!-- Akhanda Dhuni Special Spotlight -->
+    <section id="dhuni" class="py-16 bg-gradient-to-br from-brand-900 to-amber-950 text-white relative overflow-hidden">
+        <div class="absolute -right-20 -bottom-20 w-96 h-96 bg-brand-600/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid md:grid-cols-12 gap-10 items-center">
+                <div class="md:col-span-7">
+                    <span class="text-gold-400 font-semibold text-xs sm:text-sm uppercase tracking-widest block mb-2">Sacred Fire of Purification</span>
+                    <h3 class="text-3xl sm:text-4xl font-serif font-bold mb-4 text-white">The Perpetual Akhanda Dhuni</h3>
+                    <p class="text-gray-300 text-base sm:text-lg mb-6 leading-relaxed">
+                        At Shirdi, Sai Baba always sat before the <em>Dhuni</em>, distributing the sacred ash (<strong>Udi</strong>) which relieved devotees of their physical, mental, and spiritual distress. 
+                        In Mylapore, Sri Narasimha Swamiji instituted the <strong>Akhanda Dhuni</strong>, keeping the sacred logs burning round the clock.
+                    </p>
+                    <ul class="space-y-3 text-sm text-gray-200">
+                        <li class="flex items-center gap-3">
+                            <span class="w-6 h-6 rounded-full bg-gold-500/20 text-gold-400 flex items-center justify-center font-bold text-xs">✓</span>
+                            <span>Devotees offer coconut pieces and wooden offerings directly to the sacred fire.</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="w-6 h-6 rounded-full bg-gold-500/20 text-gold-400 flex items-center justify-center font-bold text-xs">✓</span>
+                            <span>Holy <strong>Udi Prasad</strong> generated from this Dhuni is distributed freely to visitors.</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="w-6 h-6 rounded-full bg-gold-500/20 text-gold-400 flex items-center justify-center font-bold text-xs">✓</span>
+                            <span>Shrines of Lord Rama, Sita, Lakshmana, Hanuman, and Lord Ganesha surround the compound.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="md:col-span-5">
+                    <div class="bg-black/40 border border-gold-500/30 p-8 rounded-3xl backdrop-blur-md shadow-2xl text-center">
+                        <div class="w-16 h-16 bg-gradient-to-tr from-brand-500 to-gold-400 rounded-2xl mx-auto flex items-center justify-center text-3xl shadow-lg mb-4">
+                            🔥
+                        </div>
+                        <h4 class="font-serif font-bold text-2xl text-gold-400 mb-2">Divine Udi Prasad</h4>
+                        <p class="text-sm text-gray-300 mb-6">
+                            "Udi is Baba's divine medicine of surrender and purification." Obtain energized Udi packets directly from the temple counters during darshan hours.
+                        </p>
+                        <a href="#timings" class="inline-block px-6 py-3 rounded-full bg-gold-500 text-brand-950 font-bold hover:bg-gold-400 transition-colors text-sm shadow">
+                            Check Darshan Schedule
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Aarti & Darshan Timings Section -->
     <section id="timings" class="py-20 bg-brand-50 border-y border-brand-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
-                <h2 class="text-sm font-bold text-brand-500 tracking-wide uppercase mb-2">Daily Schedule</h2>
-                <h3 class="text-3xl md:text-4xl font-bold text-gray-900">Aarti Timings</h3>
-                <p class="mt-4 text-gray-600 font-medium">Temple Operating Hours: <span class="text-brand-600 font-bold">5:00 AM – 10:00 PM</span> (Open All 7 Days)</p>
+                <span class="text-xs font-bold text-brand-600 tracking-widest uppercase bg-brand-100 px-3.5 py-1.5 rounded-full inline-block mb-3">Daily Worship Rituals</span>
+                <h3 class="text-3xl sm:text-4xl font-serif font-bold text-gray-900">Darshan & Aarti Timings</h3>
+                <p class="mt-3 text-gray-600 max-w-2xl mx-auto text-base">
+                    The temple echoes with pure devotion through the four traditional aartis sung daily in Marathi and Tamil devotional hymns.
+                </p>
             </div>
-            
-            <div class="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
-                <div class="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-100">
-                    
-                    <!-- Timing 1 -->
-                    <div class="p-6 sm:p-8 flex items-center justify-between hover:bg-brand-50/50 transition-colors group">
+
+            <!-- Timing Tabs / Comparison Cards -->
+            <div class="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12">
+                <!-- Regular Days Card -->
+                <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-md border border-gray-200">
+                    <div class="flex items-center justify-between pb-4 border-b border-gray-100">
                         <div>
-                            <h4 class="text-lg font-bold text-gray-900 group-hover:text-brand-600 transition-colors">Temple Opening</h4>
-                            <p class="text-sm text-gray-500 mt-1">Doors open for prayers</p>
+                            <span class="text-xs font-bold text-brand-600 uppercase tracking-wider">Regular Schedule</span>
+                            <h4 class="text-xl font-serif font-bold text-gray-900">Fri to Wed</h4>
                         </div>
-                        <div class="text-brand-600 font-bold text-xl bg-brand-50 px-4 py-2 rounded-lg">5:00 AM</div>
+                        <span class="text-2xl">🕉️</span>
+                    </div>
+                    <div class="mt-6 space-y-4">
+                        <div class="flex justify-between items-center py-2 border-b border-gray-50">
+                            <span class="text-sm font-medium text-gray-600">Morning Session</span>
+                            <span class="text-sm font-bold text-brand-700 bg-brand-50 px-3 py-1 rounded-lg">6:00 AM – 1:00 PM</span>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-gray-50">
+                            <span class="text-sm font-medium text-gray-600">Evening Session</span>
+                            <span class="text-sm font-bold text-brand-700 bg-brand-50 px-3 py-1 rounded-lg">4:00 PM – 9:00 PM</span>
+                        </div>
+                        <p class="text-xs text-gray-500 pt-2 leading-relaxed">
+                            Main sanctum closes between 1:00 PM and 4:00 PM for deity repose and preparations.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Thursday Special Card (Highlighted) -->
+                <div class="bg-gradient-to-b from-brand-600 to-brand-800 rounded-3xl p-6 sm:p-8 shadow-xl text-white relative transform lg:-translate-y-2 border-2 border-gold-400">
+                    <div class="absolute -top-3 right-6 bg-gold-400 text-brand-950 text-xs font-extrabold uppercase px-3 py-1 rounded-full shadow">
+                        Most Auspicious Day
+                    </div>
+                    <div class="flex items-center justify-between pb-4 border-b border-brand-500/50">
+                        <div>
+                            <span class="text-xs font-bold text-gold-300 uppercase tracking-wider">Baba's Day</span>
+                            <h4 class="text-2xl font-serif font-bold text-white">Thursday (Guruvar)</h4>
+                        </div>
+                        <span class="text-3xl">🪔</span>
+                    </div>
+                    <div class="mt-6 space-y-4">
+                        <div class="flex justify-between items-center py-2 border-b border-brand-700">
+                            <span class="text-sm font-medium text-brand-100">Continuous Darshan</span>
+                            <span class="text-sm font-bold text-brand-950 bg-gold-400 px-3 py-1 rounded-lg">5:00 AM – 10:00 PM</span>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-brand-700">
+                            <span class="text-sm font-medium text-brand-100">Golden Palanquin</span>
+                            <span class="text-sm font-bold text-white bg-brand-900/60 px-3 py-1 rounded-lg">7:30 PM (Pallakku)</span>
+                        </div>
+                        <p class="text-xs text-brand-100 pt-2 leading-relaxed">
+                            Continuous darshan without afternoon closure. Special abhishekam, extended musical bhajans, and non-stop Annadhanam distribution.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Special Pooja Services Card -->
+                <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-md border border-gray-200">
+                    <div class="flex items-center justify-between pb-4 border-b border-gray-100">
+                        <div>
+                            <span class="text-xs font-bold text-brand-600 uppercase tracking-wider">Devotee Offerings</span>
+                            <h4 class="text-xl font-serif font-bold text-gray-900">Pujas & Sevas</h4>
+                        </div>
+                        <span class="text-2xl">🌸</span>
+                    </div>
+                    <div class="mt-6 space-y-4">
+                        <div class="flex justify-between items-center py-2 border-b border-gray-50">
+                            <span class="text-sm font-medium text-gray-600">Abhishekam</span>
+                            <span class="text-sm font-bold text-gray-800">Early Morning</span>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-gray-50">
+                            <span class="text-sm font-medium text-gray-600">Sahasranama Archana</span>
+                            <span class="text-sm font-bold text-gray-800">Regular Hours</span>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-gray-50">
+                            <span class="text-sm font-medium text-gray-600">Sathyanarayana Puja</span>
+                            <span class="text-sm font-bold text-gray-800">Pournami (Full Moon)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The 4 Four Daily Aartis Timeline Grid -->
+            <div class="max-w-4xl mx-auto bg-white rounded-3xl shadow-lg border border-gray-100 overflow-hidden">
+                <div class="bg-brand-900 text-white py-4 px-6 sm:px-8 flex items-center justify-between">
+                    <h4 class="font-serif font-bold text-lg">The Four Daily Aartis (Fourfold Sandhya)</h4>
+                    <span class="text-xs text-gold-400 font-medium">As Per Traditional Shirdi Format</span>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-100">
+                    <!-- Timing 1 -->
+                    <div class="p-6 flex items-center justify-between hover:bg-brand-50/50 transition-colors group">
+                        <div>
+                            <div class="text-xs font-bold uppercase text-brand-600">Morning Awakening</div>
+                            <h5 class="text-lg font-bold text-gray-900 group-hover:text-brand-600">Kakad Aarti</h5>
+                            <p class="text-xs text-gray-500 mt-0.5">Wake-up prayers and sacred Mangal Snan</p>
+                        </div>
+                        <div class="text-brand-700 font-bold text-lg bg-brand-50 px-4 py-2 rounded-xl">
+                            6:00 AM <br><span class="text-[10px] text-gray-500 font-normal">5:30 AM Thu</span>
+                        </div>
                     </div>
                     
                     <!-- Timing 2 -->
-                    <div class="p-6 sm:p-8 flex items-center justify-between hover:bg-brand-50/50 transition-colors group">
+                    <div class="p-6 flex items-center justify-between hover:bg-brand-50/50 transition-colors group">
                         <div>
-                            <h4 class="text-lg font-bold text-gray-900 group-hover:text-brand-600 transition-colors">Kakad Aarti</h4>
-                            <p class="text-sm text-gray-500 mt-1">Morning awakening ritual</p>
+                            <div class="text-xs font-bold uppercase text-brand-600">Noon Ceremony</div>
+                            <h5 class="text-lg font-bold text-gray-900 group-hover:text-brand-600">Madhyan Aarti</h5>
+                            <p class="text-xs text-gray-500 mt-0.5">Mid-day prayer accompanied by Naivedyam</p>
                         </div>
-                        <div class="text-brand-600 font-bold text-xl bg-brand-50 px-4 py-2 rounded-lg">5:30 AM</div>
+                        <div class="text-brand-700 font-bold text-lg bg-brand-50 px-4 py-2 rounded-xl">
+                            12:00 PM
+                        </div>
                     </div>
 
                     <!-- Timing 3 -->
-                    <div class="p-6 sm:p-8 flex items-center justify-between hover:bg-brand-50/50 transition-colors group border-t border-gray-100">
+                    <div class="p-6 flex items-center justify-between hover:bg-brand-50/50 transition-colors group border-t border-gray-100">
                         <div>
-                            <h4 class="text-lg font-bold text-gray-900 group-hover:text-brand-600 transition-colors">Mangal Snan</h4>
-                            <p class="text-sm text-gray-500 mt-1">Holy bathing ritual</p>
+                            <div class="text-xs font-bold uppercase text-brand-600">Sunset Offering</div>
+                            <h5 class="text-lg font-bold text-gray-900 group-hover:text-brand-600">Dhoop Aarti</h5>
+                            <p class="text-xs text-gray-500 mt-0.5">Evening twilight prayer & lamps lighting</p>
                         </div>
-                        <div class="text-brand-600 font-bold text-xl bg-brand-50 px-4 py-2 rounded-lg">6:00 AM</div>
+                        <div class="text-brand-700 font-bold text-lg bg-brand-50 px-4 py-2 rounded-xl">
+                            6:00 PM
+                        </div>
                     </div>
 
                     <!-- Timing 4 -->
-                    <div class="p-6 sm:p-8 flex items-center justify-between hover:bg-brand-50/50 transition-colors group border-t border-gray-100">
+                    <div class="p-6 flex items-center justify-between hover:bg-brand-50/50 transition-colors group border-t border-gray-100">
                         <div>
-                            <h4 class="text-lg font-bold text-gray-900 group-hover:text-brand-600 transition-colors">Madhyan Aarti</h4>
-                            <p class="text-sm text-gray-500 mt-1">Mid-day prayer ceremony</p>
+                            <div class="text-xs font-bold uppercase text-brand-600">Night Lullaby</div>
+                            <h5 class="text-lg font-bold text-gray-900 group-hover:text-brand-600">Shej Aarti</h5>
+                            <p class="text-xs text-gray-500 mt-0.5">Final resting prayers before temple closure</p>
                         </div>
-                        <div class="text-brand-600 font-bold text-xl bg-brand-50 px-4 py-2 rounded-lg">12:00 PM</div>
-                    </div>
-
-                    <!-- Timing 5 -->
-                    <div class="p-6 sm:p-8 flex items-center justify-between hover:bg-brand-50/50 transition-colors group border-t border-gray-100">
-                        <div>
-                            <h4 class="text-lg font-bold text-gray-900 group-hover:text-brand-600 transition-colors">Dhoop Aarti</h4>
-                            <p class="text-sm text-gray-500 mt-1">Evening twilight prayer</p>
+                        <div class="text-brand-700 font-bold text-lg bg-brand-50 px-4 py-2 rounded-xl">
+                            8:45 PM <br><span class="text-[10px] text-gray-500 font-normal">9:30 PM Thu</span>
                         </div>
-                        <div class="text-brand-600 font-bold text-xl bg-brand-50 px-4 py-2 rounded-lg">6:30 PM</div>
                     </div>
-
-                    <!-- Timing 6 -->
-                    <div class="p-6 sm:p-8 flex items-center justify-between hover:bg-brand-50/50 transition-colors group border-t border-gray-100">
-                        <div>
-                            <h4 class="text-lg font-bold text-gray-900 group-hover:text-brand-600 transition-colors">Shej Aarti</h4>
-                            <p class="text-sm text-gray-500 mt-1">Night prayer before closing</p>
-                        </div>
-                        <div class="text-brand-600 font-bold text-xl bg-brand-50 px-4 py-2 rounded-lg">9:30 PM</div>
-                    </div>
-
                 </div>
             </div>
             
             <div class="mt-8 text-center">
-                <p class="inline-flex items-center gap-2 text-sm text-brand-900 bg-brand-100/50 px-4 py-2 rounded-full">
-                    <svg class="w-5 h-5 text-brand-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                    Thursdays are particularly auspicious. Expect larger queues, extended bhajans, and continuous prasad distribution.
-                </p>
+                <div class="inline-flex items-center gap-2 text-sm text-brand-900 bg-brand-100/70 px-5 py-2.5 rounded-full border border-brand-200">
+                    <svg class="w-5 h-5 text-brand-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0118 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path>
+                    </svg>
+                    <span>Please plan extra transit time on Thursdays and Guru Purnima, Mahasamadhi Day, and Rama Navami festivals.</span>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Community Seva Section -->
+    <!-- Community Seva & Annadhanam Section -->
     <section id="seva" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-sm font-bold text-brand-500 tracking-wide uppercase mb-2">Welfare</h2>
-                <h3 class="text-3xl md:text-4xl font-bold text-gray-900">Community Seva</h3>
-                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Inspired by Sai Baba’s teachings of <em>Shraddha</em> (Faith) and <em>Saburi</em> (Patience), the temple actively conducts daily charitable initiatives.</p>
+                <span class="text-xs font-bold text-brand-600 tracking-widest uppercase bg-brand-100 px-3.5 py-1.5 rounded-full inline-block mb-3">Service to Humanity</span>
+                <h3 class="text-3xl sm:text-4xl font-serif font-bold text-gray-900">All India Sai Samaj Seva</h3>
+                <p class="mt-3 text-gray-600 max-w-2xl mx-auto">
+                    "If you feed the hungry, you feed Me." True to Baba's eternal guidance, the Mylapore Samaj serves all beings with love and dignity.
+                </p>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- Seva 1 -->
-                <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-lg transition-shadow">
-                    <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center mb-6">
-                        <svg class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z"></path></svg>
+                <!-- Seva 1: Annadhanam -->
+                <div class="bg-brand-50/60 rounded-3xl p-8 border border-brand-100 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-brand-500 text-white rounded-2xl flex items-center justify-center mb-6 shadow-md text-2xl">
+                            🍲
+                        </div>
+                        <h4 class="text-xl font-serif font-bold text-gray-900 mb-3">Nitya Annadhanam (Free Meals)</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            Wholesome, hot vegetarian meals and sacred food prasadam are served daily to devotees, sadhus, and the needy, with massive feeding drives every Thursday and festival day.
+                        </p>
                     </div>
-                    <h4 class="text-xl font-bold text-gray-900 mb-3">Daily Annakshetra</h4>
-                    <p class="text-gray-600">Serving freshly prepared, nutritious meals (Free Langar) to thousands of devotees, underprivileged individuals, and passersby every single day.</p>
+                    <div class="pt-4 border-t border-brand-200/60 text-xs font-semibold text-brand-700">
+                        Over thousands blessed through food daily
+                    </div>
                 </div>
                 
-                <!-- Seva 2 -->
-                <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-lg transition-shadow">
-                    <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center mb-6">
-                        <svg class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                <!-- Seva 2: Medical & Eye Camps -->
+                <div class="bg-brand-50/60 rounded-3xl p-8 border border-brand-100 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-brand-500 text-white rounded-2xl flex items-center justify-center mb-6 shadow-md text-2xl">
+                            🏥
+                        </div>
+                        <h4 class="text-xl font-serif font-bold text-gray-900 mb-3">Free Medical Dispensary</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            The Samaj runs an on-premise charitable health clinic offering free doctor consultations, medical tests, and complimentary prescribed medicines to low-income residents.
+                        </p>
                     </div>
-                    <h4 class="text-xl font-bold text-gray-900 mb-3">Healthcare Support</h4>
-                    <p class="text-gray-600">Organizing regular free health check-up camps, eye care and cataract drives, and distributing essential medicines to those in need.</p>
+                    <div class="pt-4 border-t border-brand-200/60 text-xs font-semibold text-brand-700">
+                        Daily outpatient clinics & periodic eye screenings
+                    </div>
                 </div>
 
-                <!-- Seva 3 -->
-                <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-lg transition-shadow">
-                    <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center mb-6">
-                        <svg class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                <!-- Seva 3: Sai Publications & Library -->
+                <div class="bg-brand-50/60 rounded-3xl p-8 border border-brand-100 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-brand-500 text-white rounded-2xl flex items-center justify-center mb-6 shadow-md text-2xl">
+                            📖
+                        </div>
+                        <h4 class="text-xl font-serif font-bold text-gray-900 mb-3">Sai Sudha & Spiritual Library</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            Home to the official Samaj publication <em>"Sai Sudha"</em>, preserving authentic historical records, books written by Sri Narasimha Swamiji, and literature in Tamil, English, and Telugu.
+                        </p>
                     </div>
-                    <h4 class="text-xl font-bold text-gray-900 mb-3">Educational Assistance</h4>
-                    <p class="text-gray-600">Supporting underprivileged students by providing educational materials, books, uniforms, and financial aid for their continued learning.</p>
+                    <div class="pt-4 border-t border-brand-200/60 text-xs font-semibold text-brand-700">
+                        Extensive repository of Sai philosophical works
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9351361840615541"
-        crossorigin="anonymous"></script>
-    <!-- Horizontal Full Size -->
-    <ins class="adsbygoogle"
-        style="display:block"
-        data-ad-client="ca-pub-9351361840615541"
-        data-ad-slot="5893405602"
-        data-ad-format="auto"
-        data-full-width-responsive="true"></ins>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
+
     <!-- Gallery Section -->
     <section id="gallery" class="py-20 bg-brand-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
-                <h2 class="text-sm font-bold text-brand-500 tracking-wide uppercase mb-2">Glimpses</h2>
-                <h3 class="text-3xl md:text-4xl font-bold text-gray-900">Temple Gallery</h3>
-                <p class="mt-4 text-gray-600">Moments of peace, devotion, and community service.</p>
+                <span class="text-xs font-bold text-brand-600 tracking-widest uppercase bg-brand-100 px-3.5 py-1.5 rounded-full inline-block mb-3">Sacred Glimpses</span>
+                <h3 class="text-3xl sm:text-4xl font-serif font-bold text-gray-900">Temple Darshan & Heritage</h3>
+                <p class="mt-3 text-gray-600 max-w-xl mx-auto">
+                    Atmosphere of peace, devotion, and perennial surrender at Mylapore Mandir.
+                </p>
             </div>
             
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                <!-- Gallery Image 1 -->
-                <div class="group relative rounded-2xl overflow-hidden shadow-lg h-64">
-                    <img src="./assets/divine-atmosphere.jpg" alt="Temple Architecture" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                        <span class="text-white font-medium p-5 text-lg">Divine Atmosphere</span>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Gallery 1 -->
+                <div class="group relative rounded-3xl overflow-hidden shadow-lg h-72 bg-gray-200">
+                    <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=700&q=80" 
+                         alt="Main Sanctum of Sai Baba" 
+                         onerror="this.src='https://placehold.co/600x400/ea580c/ffffff?text=Main+Sanctum'"
+                         class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                        <div>
+                            <span class="text-gold-400 text-xs font-semibold uppercase tracking-wider block">Sanctum Sanctorum</span>
+                            <span class="text-white font-serif font-bold text-lg">Revered Marble Moorthi</span>
+                        </div>
                     </div>
                 </div>
-                <!-- Gallery Image 2 -->
-                <div class="group relative rounded-2xl overflow-hidden shadow-lg h-64">
-                    <img src="./assets/evening-aarti.jpg" alt="Prayer Lamps" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                        <span class="text-white font-medium p-5 text-lg">Evening Aarti</span>
+
+                <!-- Gallery 2 -->
+                <div class="group relative rounded-3xl overflow-hidden shadow-lg h-72 bg-gray-200">
+                    <img src="https://images.unsplash.com/photo-1514533212735-5df27d970db0?auto=format&fit=crop&w=700&q=80" 
+                         alt="Akhanda Dhuni Sacred Flame" 
+                         onerror="this.src='https://placehold.co/600x400/ea580c/ffffff?text=Sacred+Dhuni'"
+                         class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                        <div>
+                            <span class="text-gold-400 text-xs font-semibold uppercase tracking-wider block">Sacred Fire</span>
+                            <span class="text-white font-serif font-bold text-lg">Akhanda Dhuni & Holy Fire</span>
+                        </div>
                     </div>
                 </div>
-                <!-- Gallery Image 3 -->
-                <div class="group relative rounded-2xl overflow-hidden shadow-lg h-64">
-                    <img src="./assets/fresh-offerings.jpg" alt="Marigold Flowers" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                        <span class="text-white font-medium p-5 text-lg">Fresh Offerings</span>
+
+                <!-- Gallery 3 -->
+                <div class="group relative rounded-3xl overflow-hidden shadow-lg h-72 bg-gray-200">
+                    <img src="https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?auto=format&fit=crop&w=700&q=80" 
+                         alt="Narasimha Swamiji Samadhi Hall" 
+                         onerror="this.src='https://placehold.co/600x400/ea580c/ffffff?text=Samadhi+Mandir'"
+                         class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                        <div>
+                            <span class="text-gold-400 text-xs font-semibold uppercase tracking-wider block">Apostle of Baba</span>
+                            <span class="text-white font-serif font-bold text-lg">Sri Narasimha Swamiji Shrine</span>
+                        </div>
                     </div>
                 </div>
-                <!-- Gallery Image 4 -->
-                <div class="group relative rounded-2xl overflow-hidden shadow-lg h-64">
-                    <img src="./assets/decoration.jpg" alt="Marigold Flowers" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                        <span class="text-white font-medium p-5 text-lg">Decoration</span>
+
+                <!-- Gallery 4 -->
+                <div class="group relative rounded-3xl overflow-hidden shadow-lg h-72 bg-gray-200">
+                    <img src="https://images.unsplash.com/photo-1609342122563-a43ac8917a3a?auto=format&fit=crop&w=700&q=80" 
+                         alt="Thursday Golden Palanquin Procession" 
+                         onerror="this.src='https://placehold.co/600x400/ea580c/ffffff?text=Palanquin+Seva'"
+                         class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                        <div>
+                            <span class="text-gold-400 text-xs font-semibold uppercase tracking-wider block">Weekly Festival</span>
+                            <span class="text-white font-serif font-bold text-lg">Thursday Pallakku Seva</span>
+                        </div>
                     </div>
                 </div>
-                <!-- Gallery Image 5 -->
-                <div class="group relative rounded-2xl overflow-hidden shadow-lg h-64">
-                    <img src="./assets/security-cheque.jpg" alt="Marigold Flowers" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                        <span class="text-white font-medium p-5 text-lg">Security Cheque</span>
+
+                <!-- Gallery 5 -->
+                <div class="group relative rounded-3xl overflow-hidden shadow-lg h-72 bg-gray-200">
+                    <img src="https://images.unsplash.com/photo-1596704017254-9b121068fb31?auto=format&fit=crop&w=700&q=80" 
+                         alt="Fresh Garland Offerings and Flowers" 
+                         onerror="this.src='https://placehold.co/600x400/ea580c/ffffff?text=Flower+Offerings'"
+                         class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                        <div>
+                            <span class="text-gold-400 text-xs font-semibold uppercase tracking-wider block">Devotion</span>
+                            <span class="text-white font-serif font-bold text-lg">Malar (Flower) Offerings</span>
+                        </div>
                     </div>
                 </div>
-                <!-- Gallery Image 3 -->
-                <div class="group relative rounded-2xl overflow-hidden shadow-lg h-64">
-                    <img src="./assets/infrastructure.jpg" alt="Marigold Flowers" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                        <span class="text-white font-medium p-5 text-lg">Infrastructure</span>
+
+                <!-- Gallery 6 -->
+                <div class="group relative rounded-3xl overflow-hidden shadow-lg h-72 bg-gray-200">
+                    <img src="https://images.unsplash.com/photo-1567157577867-05ccb1388e66?auto=format&fit=crop&w=700&q=80" 
+                         alt="Mylapore Cultural Surroundings" 
+                         onerror="this.src='https://placehold.co/600x400/ea580c/ffffff?text=Mylapore+Heritage'"
+                         class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                        <div>
+                            <span class="text-gold-400 text-xs font-semibold uppercase tracking-wider block">Sacred Neighborhood</span>
+                            <span class="text-white font-serif font-bold text-lg">Historic Mylapore Hub</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Visitor Info Section -->
+    <!-- Visitor Facilities Section -->
     <section id="visit" class="py-20 bg-gray-900 text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-sm font-bold text-brand-400 tracking-wide uppercase mb-2">Plan Your Visit</h2>
-                <h3 class="text-3xl md:text-4xl font-bold mb-4">Facilities & Amenities</h3>
-                <p class="text-gray-400 max-w-2xl mx-auto">Ensuring a comfortable and peaceful experience for all devotees.</p>
+                <span class="text-xs font-bold text-gold-400 tracking-widest uppercase bg-gray-800 border border-gray-700 px-3.5 py-1.5 rounded-full inline-block mb-3">Devotee Care</span>
+                <h3 class="text-3xl sm:text-4xl font-serif font-bold">Pilgrim Facilities & Guidance</h3>
+                <p class="text-gray-400 max-w-2xl mx-auto mt-2">
+                    Ensuring all visiting bhaktas experience serene and orderly darshan.
+                </p>
             </div>
 
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-                <!-- Amenity 1 -->
-                <div class="text-center">
-                    <div class="w-14 h-14 mx-auto bg-gray-800 rounded-full flex items-center justify-center mb-4 border border-gray-700">
-                        <svg class="w-6 h-6 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path></svg>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
+                <!-- Facility 1 -->
+                <div class="bg-gray-800/80 border border-gray-700/80 p-6 rounded-2xl text-center hover:border-gold-500/50 transition-colors">
+                    <div class="w-14 h-14 mx-auto bg-brand-900/50 rounded-2xl flex items-center justify-center mb-4 text-2xl text-gold-400">
+                        👞
                     </div>
-                    <h4 class="font-semibold text-lg mb-2">Footwear Counter</h4>
-                    <p class="text-sm text-gray-400">Free, organized shoe-keeping services at the entrance.</p>
+                    <h4 class="font-semibold text-base sm:text-lg mb-1">Shoe Custody Stand</h4>
+                    <p class="text-xs text-gray-400">Managed complimentary footwear keeping counter outside the main entrance gate.</p>
                 </div>
                 
-                <!-- Amenity 2 -->
-                <div class="text-center">
-                    <div class="w-14 h-14 mx-auto bg-gray-800 rounded-full flex items-center justify-center mb-4 border border-gray-700">
-                        <svg class="w-6 h-6 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 10a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1v-4z"></path></svg>
+                <!-- Facility 2 -->
+                <div class="bg-gray-800/80 border border-gray-700/80 p-6 rounded-2xl text-center hover:border-gold-500/50 transition-colors">
+                    <div class="w-14 h-14 mx-auto bg-brand-900/50 rounded-2xl flex items-center justify-center mb-4 text-2xl text-gold-400">
+                        📿
                     </div>
-                    <h4 class="font-semibold text-lg mb-2">Prasad Stalls</h4>
-                    <p class="text-sm text-gray-400">Stalls selling fresh flowers, sweets, and offerings nearby.</p>
+                    <h4 class="font-semibold text-base sm:text-lg mb-1">Puja & Prasadam Counters</h4>
+                    <p class="text-xs text-gray-400">Sanctified sweet prasadam, coconuts, flowers, incense, and sacred Udi packets.</p>
                 </div>
 
-                <!-- Amenity 3 -->
-                <div class="text-center">
-                    <div class="w-14 h-14 mx-auto bg-gray-800 rounded-full flex items-center justify-center mb-4 border border-gray-700">
-                        <svg class="w-6 h-6 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                <!-- Facility 3 -->
+                <div class="bg-gray-800/80 border border-gray-700/80 p-6 rounded-2xl text-center hover:border-gold-500/50 transition-colors">
+                    <div class="w-14 h-14 mx-auto bg-brand-900/50 rounded-2xl flex items-center justify-center mb-4 text-2xl text-gold-400">
+                        ♿
                     </div>
-                    <h4 class="font-semibold text-lg mb-2">Meditation Hall</h4>
-                    <p class="text-sm text-gray-400">Quiet prayer space on the upper floor for silent reflection.</p>
+                    <h4 class="font-semibold text-base sm:text-lg mb-1">Assisted Accessibility</h4>
+                    <p class="text-xs text-gray-400">Ramps and volunteer assistance available for senior citizens and differently-abled devotees.</p>
                 </div>
 
-                <!-- Amenity 4 -->
-                <div class="text-center">
-                    <div class="w-14 h-14 mx-auto bg-gray-800 rounded-full flex items-center justify-center mb-4 border border-gray-700">
-                        <svg class="w-6 h-6 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                <!-- Facility 4 -->
+                <div class="bg-gray-800/80 border border-gray-700/80 p-6 rounded-2xl text-center hover:border-gold-500/50 transition-colors">
+                    <div class="w-14 h-14 mx-auto bg-brand-900/50 rounded-2xl flex items-center justify-center mb-4 text-2xl text-gold-400">
+                        📚
                     </div>
-                    <h4 class="font-semibold text-lg mb-2">Accessibility</h4>
-                    <p class="text-sm text-gray-400">Wheelchair-friendly entry points to the main sanctum.</p>
+                    <h4 class="font-semibold text-base sm:text-lg mb-1">Sai Book Stall</h4>
+                    <p class="text-xs text-gray-400">Autographed historical works, translations of Sai Satcharitra, CDs, and souvenirs.</p>
                 </div>
+            </div>
+
+            <!-- Guidelines Callout -->
+            <div class="mt-12 p-6 rounded-2xl bg-brand-950 border border-brand-800 text-sm text-gray-300 flex flex-col md:flex-row items-center justify-between gap-4">
+                <div class="flex items-center gap-3">
+                    <span class="text-2xl text-gold-400">ℹ️</span>
+                    <span><strong>Dress Code:</strong> Devotees are kindly requested to wear modest traditional attire conforming to temple sanctity.</span>
+                </div>
+                <a href="#contact" class="px-5 py-2.5 rounded-full bg-brand-700 hover:bg-brand-600 text-white font-semibold text-xs whitespace-nowrap">
+                    View Location & Transit
+                </a>
             </div>
         </div>
     </section>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9351361840615541"
-        crossorigin="anonymous"></script>
-    <!-- Horizontal Full Size -->
-    <ins class="adsbygoogle"
-        style="display:block"
-        data-ad-client="ca-pub-9351361840615541"
-        data-ad-slot="5893405602"
-        data-ad-format="auto"
-        data-full-width-responsive="true"></ins>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    <!-- <amp-ad width="100vw" height="320"
-        type="adsense"
-        data-ad-client="ca-pub-9351361840615541"
-        data-ad-slot="5893405602"
-        data-auto-format="rspv"
-        data-full-width="">
-    <div overflow=""></div>
-    </amp-ad> -->
-    <!-- Contact & Footer Section -->
-    <footer id="contact" class="bg-gray-50 border-t border-gray-200">
+
+    <!-- Contact, Location & Directions Section -->
+    <footer id="contact" class="bg-brand-50 border-t border-brand-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-            <div class="grid md:grid-cols-2 gap-12">
+            <div class="grid lg:grid-cols-12 gap-10 items-start">
                 <!-- Location Info -->
-                <div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Location & Contact</h3>
-                    <ul class="space-y-6">
-                        <li class="flex items-start">
-                            <svg class="w-6 h-6 text-brand-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                            <div class="ml-4">
-                                <h4 class="text-lg font-semibold text-gray-900">Address</h4>
-                                <p class="text-gray-600 mt-1">Shri Sai Baba Mandir, Lodhi Road, Gokalpuri, Institutional Area, Lodi Colony, New Delhi, Delhi 110003</p>
-                                <p class="text-sm text-gray-500 mt-2">Landmark: Opposite CGO Complex / Near JLN Stadium</p>
+                <div class="lg:col-span-6 space-y-6">
+                    <div>
+                        <span class="text-xs font-bold text-brand-600 tracking-widest uppercase bg-brand-100 px-3.5 py-1.5 rounded-full inline-block mb-3">Address & Transit Guide</span>
+                        <h3 class="text-2xl sm:text-3xl font-serif font-bold text-gray-900">Visiting Mylapore Sai Baba Mandir</h3>
+                        <p class="text-gray-600 mt-2 text-sm leading-relaxed">
+                            Conveniently positioned in the cultural heart of Mylapore, Chennai, easily accessible by suburban train, metro, and city buses.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <!-- Redesigned Mandir Address Card -->
+                        <div class="relative bg-white rounded-3xl p-6 sm:p-7 shadow-md hover:shadow-xl border border-brand-100/80 transition-all duration-300 overflow-hidden">
+                            <!-- Subtle warm gradient glow -->
+                            <div class="absolute -top-10 -right-10 w-32 h-32 bg-gradient-to-br from-brand-100 to-gold-200/40 rounded-full blur-2xl pointer-events-none"></div>
+
+                            <div class="relative z-10">
+                                <!-- Card Header -->
+                                <div class="flex items-start gap-4 mb-4">
+                                    <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-brand-600 to-amber-500 text-white flex items-center justify-center flex-shrink-0 shadow-lg shadow-brand-600/25">
+                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="flex-1">
+                                        <div class="flex items-center gap-2 mb-0.5">
+                                            <span class="text-[11px] font-bold uppercase tracking-wider text-brand-700 bg-brand-100/90 px-2.5 py-0.5 rounded-full">
+                                                Samaj Headquarters
+                                            </span>
+                                        </div>
+                                        <h4 class="font-serif font-bold text-gray-900 text-lg sm:text-xl leading-tight">
+                                            All India Sai Samaj (Regd.) Mandir
+                                        </h4>
+                                    </div>
+                                </div>
+
+                                <!-- Street Address Details -->
+                                <div class="pl-0 sm:pl-16 space-y-3">
+                                    <div class="text-sm text-gray-700 leading-relaxed font-normal bg-brand-50/50 p-3.5 rounded-2xl border border-brand-100">
+                                        <p class="font-semibold text-gray-900">54/55, Alamelumangapuram,</p>
+                                        <p class="text-gray-600">Mylapore, Chennai, Tamil Nadu — <strong>600004</strong>, India</p>
+                                    </div>
+
+                                    <!-- Landmark Tag Box -->
+                                    <div class="flex items-center gap-2.5 p-3 rounded-xl bg-amber-50/80 border border-amber-200/90 text-xs text-amber-950 font-medium">
+                                        <span class="text-base flex-shrink-0">🛕</span>
+                                        <span><strong>Key Landmark:</strong> Beside Luz Corner &amp; walkable from the sacred Sri Kapaleeshwarar Temple.</span>
+                                    </div>
+
+                                    <!-- Action Buttons -->
+                                    <div class="flex flex-wrap items-center gap-2 pt-1">
+                                        <button id="copy-address-btn" onclick="copyTempleAddress()" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-gray-100 hover:bg-brand-50 hover:text-brand-700 text-gray-700 text-xs font-semibold border border-gray-200 transition-colors">
+                                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                                            <span id="copy-btn-text">Copy Full Address</span>
+                                        </button>
+                                        <a href="https://maps.google.com/?q=Sai+Baba+Temple+Mylapore+Chennai" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-brand-600 hover:bg-brand-700 text-white text-xs font-semibold shadow hover:shadow-md transition-all">
+                                            <span>Open in Google Maps</span>
+                                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                                        </a>
+                                    </div>
+                                    <!-- Toast status message for copy -->
+                                    <div id="copy-toast" class="hidden text-xs text-emerald-700 font-semibold flex items-center gap-1.5">
+                                        <svg class="w-4 h-4 text-emerald-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                        <span>Address copied to clipboard successfully!</span>
+                                    </div>
+                                </div>
                             </div>
-                        </li>
-                        <li class="flex items-start">
-                            <svg class="w-6 h-6 text-brand-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"></path></svg>
-                            <div class="ml-4">
-                                <h4 class="text-lg font-semibold text-gray-900">Transport</h4>
-                                <p class="text-gray-600 mt-1"><strong>Metro:</strong> JLN Stadium Metro Station (Violet Line) — 5 mins walk.</p>
-                                <p class="text-gray-600 mt-1"><strong>Bus:</strong> Lodhi Road / CGO Complex Bus Station.</p>
+                        </div>
+
+                        <!-- Redesigned How to Reach Card with Structured Grid -->
+                        <div class="bg-white rounded-3xl p-6 sm:p-7 shadow-md hover:shadow-xl border border-brand-100/80 transition-all duration-300">
+                            <!-- Card Header -->
+                            <div class="flex items-center gap-3.5 mb-5 pb-3 border-b border-gray-100">
+                                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-500 to-brand-600 text-white flex items-center justify-center shadow-md">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-serif font-bold text-gray-900 text-lg leading-tight">How to Reach the Mandir</h4>
+                                    <p class="text-xs text-gray-500">Multiple convenient transit options across Chennai</p>
+                                </div>
                             </div>
-                        </li>
-                    </ul>
+
+                            <!-- 4 Transit Modes Grid -->
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                                <!-- Mode 1: Suburban Train -->
+                                <div class="p-3.5 rounded-2xl bg-blue-50/60 border border-blue-100 hover:border-blue-300 hover:bg-blue-50 transition-all">
+                                    <div class="flex items-center justify-between mb-1.5">
+                                        <span class="inline-flex items-center gap-1.5 text-xs font-bold text-blue-900">
+                                            <span class="text-base">🚆</span> Thirumayilai MRTS
+                                        </span>
+                                        <span class="text-[11px] font-semibold bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full">
+                                            ~700m Walk
+                                        </span>
+                                    </div>
+                                    <p class="text-[12px] text-gray-600 leading-snug">
+                                        Just an 8-minute walk from Thirumayilai station (connects Beach &amp; Velachery).
+                                    </p>
+                                </div>
+
+                                <!-- Mode 2: Metro -->
+                                <div class="p-3.5 rounded-2xl bg-emerald-50/60 border border-emerald-100 hover:border-emerald-300 hover:bg-emerald-50 transition-all">
+                                    <div class="flex items-center justify-between mb-1.5">
+                                        <span class="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-900">
+                                            <span class="text-base">🚇</span> Chennai Metro
+                                        </span>
+                                        <span class="text-[11px] font-semibold bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded-full">
+                                            ~2.5 km (Blue Line)
+                                        </span>
+                                    </div>
+                                    <p class="text-[12px] text-gray-600 leading-snug">
+                                        Nearest stations: <strong>AG-DMS</strong> or <strong>Teynampet</strong> (short auto/cab ride).
+                                    </p>
+                                </div>
+
+                                <!-- Mode 3: Bus -->
+                                <div class="p-3.5 rounded-2xl bg-amber-50/60 border border-amber-100 hover:border-amber-300 hover:bg-amber-50 transition-all">
+                                    <div class="flex items-center justify-between mb-1.5">
+                                        <span class="inline-flex items-center gap-1.5 text-xs font-bold text-amber-950">
+                                            <span class="text-base">🚌</span> MTC City Bus
+                                        </span>
+                                        <span class="text-[11px] font-semibold bg-amber-100 text-amber-800 px-2 py-0.5 rounded-full">
+                                            ~300m Walk
+                                        </span>
+                                    </div>
+                                    <p class="text-[12px] text-gray-600 leading-snug">
+                                        Alight at <strong>Luz Corner</strong> or <strong>Mylapore Tank</strong> (frequent city-wide routes).
+                                    </p>
+                                </div>
+
+                                <!-- Mode 4: Airport -->
+                                <div class="p-3.5 rounded-2xl bg-purple-50/60 border border-purple-100 hover:border-purple-300 hover:bg-purple-50 transition-all">
+                                    <div class="flex items-center justify-between mb-1.5">
+                                        <span class="inline-flex items-center gap-1.5 text-xs font-bold text-purple-900">
+                                            <span class="text-base">✈️</span> Chennai Airport (MAA)
+                                        </span>
+                                        <span class="text-[11px] font-semibold bg-purple-100 text-purple-700 px-2 py-0.5 rounded-full">
+                                            14 km (~35 min)
+                                        </span>
+                                    </div>
+                                    <p class="text-[12px] text-gray-600 leading-snug">
+                                        Direct pre-paid taxis and app cabs easily reach via GST Road &amp; Anna Salai.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Helpful Pilgrim Tip -->
+                            <div class="mt-4 pt-3 border-t border-gray-100 flex items-center gap-2 text-[12px] text-gray-500">
+                                <span class="text-brand-600 font-bold">Tip:</span>
+                                <span>Auto-rickshaws and shared rides are available round-the-clock outside Thirumayilai station gate.</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Simple Map Placeholder / Visual -->
-                <div class="bg-gray-200 rounded-3xl overflow-hidden h-64 md:h-full min-h-[300px] relative shadow-inner">
-                    <!-- Embedded Google Map -->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d875.8354534536487!2d77.2288736951096!3d28.589520824986128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce31d65d92b0b%3A0xed12035649151e07!2sShri%20Sai%20Baba%20Mandir!5e0!3m2!1sen!2sin!4v1785847353970!5m2!1sen!2sin" class="absolute inset-0 w-full h-full" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                <!-- Interactive Embedded Google Map Container -->
+                <div class="lg:col-span-6 flex flex-col space-y-3">
+                    <div class="bg-white rounded-3xl p-3 shadow-md border border-brand-100/80">
+                        <div class="bg-gray-100 rounded-2xl overflow-hidden h-[340px] sm:h-[440px] w-full relative shadow-inner">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d485.88056394091814!2d80.26462854289794!3d13.03283749582335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267cd84db0017%3A0xdaf343f5be1553f6!2sSai%20Baba%20Temple%20Mylapore!5e0!3m2!1sen!2sin!4v1790766409927!5m2!1sen!2sin" 
+                                class="absolute inset-0 w-full h-full" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="strict-origin-when-cross-origin">
+                            </iframe>
+                        </div>
+                        <div class="flex flex-wrap items-center justify-between gap-2 p-3 text-xs text-gray-600 bg-brand-50/70 rounded-xl mt-3 border border-brand-100">
+                            <span class="flex items-center gap-1.5 font-medium">
+                                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                                Coordinates: 13.0328° N, 80.2646° E
+                            </span>
+                            <a href="https://maps.google.com/?q=Sai+Baba+Temple+Mylapore+Chennai" target="_blank" rel="noopener noreferrer" class="text-brand-600 font-bold hover:text-brand-700 flex items-center gap-1 transition-colors">
+                                <span>Get Live Directions</span>
+                                <span>↗</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class=".bg-brand-50 .text-gray-900 py-8 px-4 border-t border-brand-800 flex flex-col items-center text-center">
+
+        <!-- Footer Bottom Bar -->
+        <div class="bg-brand-900 text-brand-100 py-8 px-4 border-t border-brand-800 flex flex-col items-center text-center">
             <div class="mb-4">
-                <p class="text-sm mb-2">© <span id="year"></span> Shri Sai Bhakt Samaj (Regd.). All rights reserved.</p>
-                <p class="text-xs text-brand-00">
-                    Designed & Developed by <a href="https://technology.mahsua.com/pages/free-services.html" target="_blank" rel="noopener noreferrer" class=".text-gray-900 font-semibold hover:text-yellow-500 underline decoration-brand-500 underline-offset-4 transition-colors">Mahsua Technology</a>
-                </p>
-                <p class="text-xs text-brand-400 mt-1 italic">
-                    A free public service initiative empowering cultural spaces digitally.
+                <div class="flex items-center justify-center gap-2 mb-2 font-serif font-bold text-white text-base">
+                    <span>ॐ श्री साईं नाथाय नमः</span>
+                </div>
+                <p class="text-sm mb-1">© <span id="year"></span> All India Sai Samaj (Regd.), Mylapore, Chennai. All rights reserved.</p>
+                <p class="text-xs text-brand-300">
+                    A tribute portal presenting the legacy of Sri Narasimha Swamiji and Shirdi Sai Baba's universal teachings.
                 </p>
             </div>
             
-            <div class="flex items-center gap-4 mt-2">
-                <a href="https://technology.mahsua.com/pages/donate.html" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-5 py-2 bg-brand-600 hover:bg-brand-500 text-white text-xs font-semibold rounded-full transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
-                    🤍 Support Our Work
-                </a>
-                <span class="text-brand-700/50">|</span>
-                <a href="./disclaimer.html" class="inline-flex items-center px-5 py-2 bg-brand-600 hover:bg-brand-500 text-white text-xs font-semibold rounded-full transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
-                    Disclaimer
-                </a>
+            <div class="flex flex-wrap items-center justify-center gap-3 mt-2 text-xs">
+                <a href="#about" class="hover:text-gold-400 transition-colors">History</a>
+                <span class="text-brand-700">•</span>
+                <a href="#dhuni" class="hover:text-gold-400 transition-colors">Akhanda Dhuni</a>
+                <span class="text-brand-700">•</span>
+                <a href="#timings" class="hover:text-gold-400 transition-colors">Aartis</a>
+                <span class="text-brand-700">•</span>
+                <a href="#seva" class="hover:text-gold-400 transition-colors">Annadhanam</a>
+                <span class="text-brand-700">•</span>
+                <a href="#contact" class="hover:text-gold-400 transition-colors">Directions</a>
             </div>
         </div>
     </footer>
-    <!-- Scripts -->
+
+    <!-- Interactive Scripts -->
     <script>
-        // Set dynamic year in footer
+        // Set dynamic current year in footer
         document.getElementById('year').textContent = new Date().getFullYear();
 
+        // Safe clipboard copy function using document.execCommand('copy')
+        function copyTempleAddress() {
+            const addressText = "Shri Sai Baba Temple, All India Sai Samaj (Regd.), 54/55, Alamelumangapuram, Mylapore, Chennai, Tamil Nadu 600004, India";
+            const tempInput = document.createElement("textarea");
+            tempInput.value = addressText;
+            tempInput.setAttribute("readonly", "");
+            tempInput.style.position = "absolute";
+            tempInput.style.left = "-9999px";
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            
+            try {
+                const successful = document.execCommand("copy");
+                if (successful) {
+                    const btnText = document.getElementById("copy-btn-text");
+                    const toast = document.getElementById("copy-toast");
+                    btnText.textContent = "Copied! ✓";
+                    toast.classList.remove("hidden");
+                    setTimeout(() => {
+                        btnText.textContent = "Copy Full Address";
+                        toast.classList.add("hidden");
+                    }, 3500);
+                }
+            } catch (err) {
+                console.error("Unable to copy", err);
+            }
+            document.body.removeChild(tempInput);
+        }
+
         // Mobile menu toggle logic
-        const btn = document.getElementById('mobile-menu-btn');
-        const menu = document.getElementById('mobile-menu');
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
         const mobileLinks = document.querySelectorAll('.mobile-link');
 
-        btn.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
-        });
-
-        // Close mobile menu when clicking a link
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                menu.classList.add('hidden');
+        if (menuBtn && mobileMenu) {
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
             });
-        });
 
-        // Add subtle shadow to header on scroll
+            // Close mobile menu when clicking any nav link
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        }
+
+        // Header shadow dynamics on scroll
         const header = document.querySelector('header');
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 10) {
+            if (window.scrollY > 20) {
                 header.classList.add('shadow-md');
                 header.classList.remove('shadow-sm');
             } else {
