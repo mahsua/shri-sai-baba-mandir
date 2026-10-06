@@ -12,6 +12,9 @@
       gtag('js', new Date());
       gtag('config', 'G-L3BEDPJE02');
     </script>
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9351361840615541" crossorigin="anonymous"></script>
+    <meta name="google-adsense-account" content="ca-pub-9351361840615541">
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -49,10 +52,10 @@
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: #fffaf3; }
         ::-webkit-scrollbar-thumb { background: #ea580c; border-radius: 4px; }
-        ::-webkit-scrollbar-thumb:hover { background: #c2410c; }
+        ::-webkit-scrollbar-thumb:hover { background: #ff682c50; }
         .hero-pattern {
             background-color: #431407;
-            background-image: radial-gradient(#9a3412 0.75px, transparent 0.75px), radial-gradient(#9a3412 0.75px, #431407 0.75px);
+            background-image: radial-gradient(#ff612c77 0.75px, transparent 0.75px), radial-gradient(#f7693971 0.75px, #431407 0.75px);
             background-size: 30px 30px;
             background-position: 0 0, 15px 15px;
         }
@@ -122,7 +125,7 @@
     <!-- Hero Section -->
     <section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-brand-900 text-white">
         <!-- Background Gradient and Overlay -->
-        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=1920&q=80'); opacity: 0.22;"></div>
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('./assets/main.jpg'); opacity: 0.22;"></div>
         <div class="absolute inset-0 bg-gradient-to-b from-brand-950/80 via-brand-900/85 to-brand-950"></div>
         
         <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 flex flex-col items-center text-center">
@@ -177,6 +180,24 @@
         </div>
     </section>
 
+    <!-- Google Ads: Horizontal Full Size -->
+    <div class="w-full bg-white border-b border-brand-100 py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
+            <span class="text-[10px] text-gray-400 font-semibold tracking-widest uppercase mb-1">Advertisement</span>
+            <div class="w-full text-center overflow-hidden">
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-9351361840615541"
+                     data-ad-slot="5893405602"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </div>
+    </div>
+
     <!-- About Section -->
     <section id="about" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -184,7 +205,7 @@
                 <!-- Image & Founder Memorial Card -->
                 <div class="lg:col-span-5 mb-12 lg:mb-0 relative">
                     <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-brand-100">
-                        <img src="https://images.unsplash.com/photo-1609342122563-a43ac8917a3a?auto=format&fit=crop&w=900&q=80" 
+                        <img src="./assets/temple-sanctum.jpg" 
                              alt="Temple Sanctum and Spiritual Lamps" 
                              onerror="this.src='https://placehold.co/800x600/f97316/ffffff?text=Mylapore+Sai+Baba+Temple'"
                              class="w-full h-[440px] object-cover hover:scale-105 transition-transform duration-700">
@@ -455,6 +476,24 @@
         </div>
     </section>
 
+    <!-- Google Ads: Display Ad (Responsive) -->
+    <div class="w-full bg-brand-50 py-8 border-b border-brand-100">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
+            <span class="text-[10px] text-gray-400 font-semibold tracking-widest uppercase mb-1.5">Advertisement</span>
+            <div class="w-full bg-white p-4 sm:p-6 rounded-3xl border border-brand-100 shadow-sm text-center overflow-hidden">
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-9351361840615541"
+                     data-ad-slot="5893405602"
+                     data-ad-format="rectangle, horizontal"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </div>
+    </div>
+
     <!-- Community Seva & Annadhanam Section -->
     <section id="seva" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -532,7 +571,7 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Gallery 1 -->
                 <div class="group relative rounded-3xl overflow-hidden shadow-lg h-72 bg-gray-200">
-                    <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=700&q=80" 
+                    <img src="./assets/marbal.jpg" 
                          alt="Main Sanctum of Sai Baba" 
                          onerror="this.src='https://placehold.co/600x400/ea580c/ffffff?text=Main+Sanctum'"
                          class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
@@ -546,7 +585,7 @@
 
                 <!-- Gallery 2 -->
                 <div class="group relative rounded-3xl overflow-hidden shadow-lg h-72 bg-gray-200">
-                    <img src="https://images.unsplash.com/photo-1514533212735-5df27d970db0?auto=format&fit=crop&w=700&q=80" 
+                    <img src="./assets/dhuni.jpg" 
                          alt="Akhanda Dhuni Sacred Flame" 
                          onerror="this.src='https://placehold.co/600x400/ea580c/ffffff?text=Sacred+Dhuni'"
                          class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
@@ -560,7 +599,7 @@
 
                 <!-- Gallery 3 -->
                 <div class="group relative rounded-3xl overflow-hidden shadow-lg h-72 bg-gray-200">
-                    <img src="https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?auto=format&fit=crop&w=700&q=80" 
+                    <img src="./assets/shrine.jpg" 
                          alt="Narasimha Swamiji Samadhi Hall" 
                          onerror="this.src='https://placehold.co/600x400/ea580c/ffffff?text=Samadhi+Mandir'"
                          class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
@@ -574,7 +613,7 @@
 
                 <!-- Gallery 4 -->
                 <div class="group relative rounded-3xl overflow-hidden shadow-lg h-72 bg-gray-200">
-                    <img src="https://images.unsplash.com/photo-1609342122563-a43ac8917a3a?auto=format&fit=crop&w=700&q=80" 
+                    <img src="./assets/pallakku-seva.jpg" 
                          alt="Thursday Golden Palanquin Procession" 
                          onerror="this.src='https://placehold.co/600x400/ea580c/ffffff?text=Palanquin+Seva'"
                          class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
@@ -588,7 +627,7 @@
 
                 <!-- Gallery 5 -->
                 <div class="group relative rounded-3xl overflow-hidden shadow-lg h-72 bg-gray-200">
-                    <img src="https://images.unsplash.com/photo-1596704017254-9b121068fb31?auto=format&fit=crop&w=700&q=80" 
+                    <img src="./assets/flower.jpg" 
                          alt="Fresh Garland Offerings and Flowers" 
                          onerror="this.src='https://placehold.co/600x400/ea580c/ffffff?text=Flower+Offerings'"
                          class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
@@ -678,6 +717,32 @@
             </div>
         </div>
     </section>
+
+    <!-- Google Ads: Multiple Ads Post View (Multiplex) -->
+    <div class="w-full bg-brand-50/80 border-b border-brand-200 py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between pb-3 border-b border-brand-200 mb-5">
+                <div class="flex items-center gap-2">
+                    <span class="w-2.5 h-2.5 rounded-full bg-brand-600 animate-pulse"></span>
+                    <span class="text-xs font-bold uppercase tracking-wider text-gray-800">Recommended &amp; Sponsored Stories</span>
+                </div>
+                <span class="text-[10px] text-gray-400 font-semibold tracking-widest uppercase">Sponsored</span>
+            </div>
+            <div class="bg-white p-4 sm:p-6 rounded-3xl border border-brand-100 shadow-sm overflow-hidden">
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-9351361840615541"
+                     data-ad-slot="5893405602"
+                     data-ad-format="autorelaxed"
+                     data-matched-content-rows-num="1,2"
+                     data-matched-content-columns-num="1,2,4"
+                     data-matched-content-ui-type="image_card_stacked"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </div>
+    </div>
 
     <!-- Contact, Location & Directions Section -->
     <footer id="contact" class="bg-brand-50 border-t border-brand-200">
